@@ -6,6 +6,7 @@ void setup()
 pinMode(EN,OUTPUT);     // ENABLE AS OUTPUT
 pinMode(dir,OUTPUT);    // DIRECTION AS OUTPUT
 pinMode(Step,OUTPUT);   // STEP AS OUTPUT
+digitalWrite(EN,LOW);   //TMC2209 REQUIRES "LOW" FOR EN OTHERWISE IT WON'T START
 digitalWrite(dir,HIGH);
 }
 void loop()
